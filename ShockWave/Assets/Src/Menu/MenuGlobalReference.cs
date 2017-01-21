@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class MenuGlobalReference : Singleton<MenuGlobalReference>
 {
-	public Image BGMenu;
+	public GameObject BGMenu;
 
 	#region MainMenu
 	public GameObject PanelMainMenu;
@@ -12,6 +12,8 @@ public class MenuGlobalReference : Singleton<MenuGlobalReference>
 	public GameObject BtnOp;
 	public GameObject BtnC;
 	public GameObject BtnX;
+	public GameObject ImgLogo;
+	public GameObject ImgPlayer;
 	#endregion
 
 	#region TypesFX
