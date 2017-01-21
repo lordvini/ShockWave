@@ -15,4 +15,10 @@ public class GlobalReference : Singleton<GlobalReference>
 	{
 		public const string Basic_Attack = "Basic Attack";
 	}
+
+	public class Animations
+	{
+		public const string Speed = "Speed";
+		public const string Basic_Attack = "Basic Attack";
+	}
 }
