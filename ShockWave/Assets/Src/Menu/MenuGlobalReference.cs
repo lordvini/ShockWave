@@ -1,18 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class MenuGlobalReference : MonoBehaviour
+public class MenuGlobalReference : Singleton<MenuGlobalReference>
 {
+	public Image BGMenu;
 
-	// Use this for initialization
-	void Start ()
-    {
-	
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-	
-	}
+	#region MainMenu
+	public GameObject PanelMainMenu;
+	public GameObject BtnVs;
+	public GameObject BtnOp;
+	public GameObject BtnC;
+	public GameObject BtnX;
+	#endregion
+
+	#region TypesFX
+	[System.NonSerialized]
+	public string FXTypeFade 	= "fade", FXTypeMove = "move", FXTypeScale = "scale";
+	#endregion
 }
